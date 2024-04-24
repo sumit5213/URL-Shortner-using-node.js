@@ -30,7 +30,7 @@ async function handleNewShortURL(req,res){                  //get request is use
         },
     }
   )
-    return res.redirect(entry.redirectURL);
+  return res.redirect(entry.redirectURL);
 }
 
 
@@ -49,4 +49,3 @@ module.exports = {
   handleNewShortURL,
   handleGetAnalytics,
 };
-URL.cre
