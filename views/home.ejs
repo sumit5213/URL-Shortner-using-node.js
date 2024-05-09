@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>URL Shortner </h1>
+    <% if (locals.id) { %>
+        <p>Generated URL is : http://localhost:3007/url/<%=id %></p>
+    <% } %>
+    <div>
+        <form method="POST" action="/url">
+            <label for=""> Enter the original url :</label>
+            <input type="text" name ="url" placeholder="www.example.com">
+            <button type="submit">Generate url</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
